@@ -7,7 +7,7 @@
     }
     
     body{
-    background-color: lightsteelblue;
+    background-color: rgb(255, 255, 255);
     font-family: 'Forma';
 }
 
@@ -15,9 +15,10 @@
     background-image: url("assests/rollerskaterug.jpg");
     height: 400px;
 }
+/* where i change width of column on desktop view */
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 3rem, 80ch);
+    width: min(100% - 3rem, 95ch);
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
@@ -33,15 +34,16 @@ grid-template-areas:
     "a a";
 }
 
-.history {
+#history {
 grid-area: h;
+color: #C341D4;
 }
 
-.variations{
+#variations{
 grid-area: v;
 }
 
-.alphabet {
+#alphabet {
 grid-area: a;
 }
 }
