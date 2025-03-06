@@ -10,6 +10,11 @@
     background-color: lightsteelblue;
     font-family: 'Forma';
 }
+
+.hero{
+    background-image: url("assests/rollerskaterug.jpg");
+    height: 400px;
+}
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 3rem, 80ch);
@@ -45,19 +50,57 @@ footer{
     background-color: gray;
 }
 
-/* variable font animation */
-h3{
+/* variable font animation  */
+     h3{
+        color: white;
+        line-height: 10px;
+ 
+}
+
+.opsz{
     font-weight:20; 
     text-align: center;
     font-size: 5em;
-    animation: weightChange 7s infinite;
+    animation: opticalSizeChange 7s infinite;
 }
 
-@keyframes weightChange {
+@keyframes opticalSizeChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 8, "wght" 400, "slnt" 0;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    50%{font-variation-settings: "opsz" 72, "wght" 900, "slnt" 0;
+    }
+    
+}
+
+.wght{
+    font-weight:20; 
+    text-align: center;
+    font-size: 5em;
+    animation: weightSizeChange 7s infinite;
+}
+
+@keyframes weightSizeChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 0, "wght" 1, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 0, "wght" 900, "slnt" 0;
+    }
+    
+}
+
+.slnt{
+    font-weight:20; 
+    text-align: center;
+    font-size: 5em;
+    animation: slntChange 7s infinite;
+}
+
+@keyframes slntChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 0, "wght" 10, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 0, "wght" 100, "slnt" -13;
     }
     
 }
