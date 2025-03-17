@@ -7,12 +7,11 @@
     }
     
     body{
-    background-color: rgb(255, 255, 255);
+    background-color: #FFDBAC;
     font-family: 'Forma';
 }
 
 .hero{
-    background-image: url("assests/rollerskaterug.jpg");
     height: 400px;
 }
 /* where i change width of column on desktop view */
@@ -36,7 +35,7 @@ grid-template-areas:
 
 #history {
 grid-area: h;
-color: #C341D4;
+color: #000000;
 }
 
 #variations{
@@ -54,7 +53,7 @@ footer{
 
 /* variable font animation  */
      h3{
-        color: white;
+        color: rgb(0, 0, 0);
         line-height: 10px;
  
 }
