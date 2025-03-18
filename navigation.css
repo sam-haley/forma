@@ -13,17 +13,19 @@
       top:0px;
       position: fixed;
       z-index: 999;
-      width: 100%
+      width: 100%;
+      border-bottom: 20px solid #A98B65;
   }
   
   .formanav {
     font-weight: regular;
-    margin: 0;
+    /* margin: 0; */
   }
   /* where to change the background color of the pop-up nav bar*/
   nav {
+     
       position: absolute;
-      text-align: left;
+      text-align: right;
       padding-top:10px;
       top: 100%;
       left: 0;
@@ -35,6 +37,7 @@
   }
  
   nav ul {
+      font-weight: light;
       margin: 0;
       padding: 0;
       list-style: none;

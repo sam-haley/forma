@@ -58,26 +58,12 @@ footer{
  
 }
 
-.opsz{
-    font-weight:20; 
-    text-align: center;
-    font-size: 5em;
-    animation: opticalSizeChange 7s infinite;
-}
-
-@keyframes opticalSizeChange {
-    0%, 100%{
-        font-variation-settings: "opsz" 8, "wght" 400, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 72, "wght" 900, "slnt" 0;
-    }
-    
-}
 
 .wght{
+    padding-top: 115px;
     font-weight:20; 
     text-align: center;
-    font-size: 5em;
+    font-size: 15em;
     animation: weightSizeChange 7s infinite;
 }
 
@@ -90,21 +76,6 @@ footer{
     
 }
 
-.slnt{
-    font-weight:20; 
-    text-align: center;
-    font-size: 5em;
-    animation: slntChange 7s infinite;
-}
-
-@keyframes slntChange {
-    0%, 100%{
-        font-variation-settings: "opsz" 0, "wght" 10, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 0, "wght" 100, "slnt" -13;
-    }
-    
-}
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
@@ -130,4 +101,13 @@ footer{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
-
+#fcs{
+    font-size: 1.5em;
+    text-align: left;
+    padding-bottom: 350px;
+}
+#alpabet{
+    font-size: 1.5em;
+    text-align: left;
+    padding-bottom: 200px;
+}
