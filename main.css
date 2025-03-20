@@ -19,7 +19,7 @@
 /* where i change width of column on desktop view */
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 3rem, 95ch);
+    width: min(100% - 3rem, 120ch);
     margin-inline: auto;
 }
 
@@ -39,7 +39,7 @@ h1{
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 300px;
+gap: 10px 200px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
@@ -131,6 +131,7 @@ footer{
 }
 h4{
     font-size: 55px;
+    margin: 55px 0px;
 }
 /* animated optical size change */
 .opticalsize{
