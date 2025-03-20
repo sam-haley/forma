@@ -4,6 +4,8 @@
     font-family: 'Forma';
     font-style: normal;
     font-weight: normal;
+    font-weight: regular;
+    font-weight: bold;
     }
     
     body{
@@ -20,12 +22,24 @@
     width: min(100% - 3rem, 95ch);
     margin-inline: auto;
 }
+
+/* typographic styling */
+p{
+    font-size:16px;
+    font-variation-settings: "opsz" 0, "wght" 300, "slnt" 0
+
+}
+
+h1{
+    font-size: 20px;
+    font-variation-settings: "opsz" 0, "wght" 600, "slnt" 0
+}
 /* how the page wrapper appears on desktop */
 
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 25px;
+grid-gap: 300px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
@@ -48,7 +62,7 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: gray;
+    background-color: #E6BC85;
 }
 
 /* variable font animation  */
@@ -74,6 +88,60 @@ footer{
     50%{font-variation-settings: "opsz" 0, "wght" 900, "slnt" 0;
     }
     
+}
+
+/* animations for the variations section */
+/* animated weight change */
+.weight{
+    animation: WeightVariationChange 3s infinite;
+}
+
+@keyframes WeightVariationChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 0, "wght" 1, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 0, "wght" 900, "slnt" 0;
+    }
+}
+
+/* animated slant change */
+.slant{
+    animation: SlantVariationChange 3s infinite;
+}
+
+@keyframes SlantVariationChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 0, "wght" 150, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 0, "wght" 150, "slnt" -13;
+    }
+}
+
+/* animated width change */
+.width{
+    animation: WidthVariationChange 3s infinite;
+}
+
+@keyframes WidthVariationChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 0, "wght" 200, "slnt" 0, "wdth" 50;
+    }
+    50%{font-variation-settings: "opsz" 0, "wght" 200, "slnt" 0, "wdth" 100;
+    }
+}
+h4{
+    font-size: 55px;
+}
+/* animated optical size change */
+.opticalsize{
+    animation: OpticalSizeVariationChange 3s infinite;
+}
+@keyframes OpticalSizeVariationChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 8, "wght" 200, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 72, "wght" 200, "slnt" 0;
+    }
 }
 
 /* variable font that changes on hover */
@@ -110,4 +178,16 @@ footer{
     font-size: 1.5em;
     text-align: left;
     padding-bottom: 200px;
+}
+
+.outline {
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+}
+
+.outline:hover {
+    background-color: #E6BC85;
+    color: #000000;
 }
