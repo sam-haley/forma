@@ -44,7 +44,7 @@ grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
     "h v"
-    "a a";
+    "a l";
 }
 
 #history {
@@ -58,6 +58,10 @@ grid-area: v;
 
 #alphabet {
 grid-area: a;
+}
+#lower-alphabet{
+    grid-area:l;
+    font-size: 200px;
 }
 }
 /* CSS for the footer */
@@ -175,13 +179,32 @@ h4{
     text-align: left;
     padding-bottom: 350px;
 }
-#alpabet{
-    font-size: 1.5em;
+#alphabet{}
     text-align: left;
     padding-bottom: 200px;
 }
+.letters{
+    font-size: 25px;
+}
+
+.symbols{
+    font-size: 25px;
+}
+
+.numbers{
+    font-size: 25px;
+}
 
 .outline {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    margin:60px 0px;
+    border-radius: 10px;
+    font-size: 16px;
     background-color: transparent;
     color: #000000;
     border: 2px solid #000000;
