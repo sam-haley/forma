@@ -179,16 +179,21 @@ h4{
     text-align: left;
     padding-bottom: 350px;
 }
-#alphabet{}
+
+.lower-alphabet{
+    font-size: 200px;
     text-align: left;
-    padding-bottom: 200px;
+    padding-top: 400px;
 }
+
 .letters{
     font-size: 25px;
+    padding-top: 20px; /* Added padding on top */
 }
 
 .symbols{
     font-size: 25px;
+    padding-top: 20px; /* Added padding on top */
 }
 
 .numbers{
