@@ -114,7 +114,7 @@ footer{
     font-weight:20; 
     text-align: center;
     font-size: 15em;
-    animation: weightSizeChange 7s infinite;
+    animation: weightSizeChange 12s infinite;
 }
 
 @keyframes weightSizeChange {
