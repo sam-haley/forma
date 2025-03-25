@@ -8,13 +8,13 @@
   
   header {
     /* where to set the color of the nav bar */
-      background: #E6BC85;
+      background: #85b1e6;
       text-align: center;
       top:0px;
       position: fixed;
       z-index: 999;
       width: 100%;
-      border-bottom: 15px solid #A98B65;
+      border-bottom: 15px solid #6865a9;
   }
   
   .formanav {
@@ -29,7 +29,7 @@
       padding-top:10px;
       top: 100%;
       left: 0;
-      background: rgb(232, 121, 10);
+      background: rgb(33, 39, 106);
       width: 100%;
       transform: scale(1,0);
       transform-origin: top;
@@ -49,7 +49,7 @@
   }
   
   nav a {
-      color: rgb(0, 0, 0);
+      color: rgb(33, 39, 106);
       text-decoration: none;
       font-size: 1.2rem;
       text-transform: uppercase;
@@ -58,7 +58,7 @@
   }
   /* where to change the font color of the nav bar pop-up */
   nav a:hover {
-      color: black;
+      color: rgb(33, 39, 106);
   }
   
   .nav-checkbox:checked ~ nav {
@@ -85,7 +85,7 @@
   
           display: block;
           /* color of the hamburger menu */
-          background: black;
+          background: rgb(33, 39, 106);
           /* how far the hamburger menu is from the top */
           margin-top:7px;
           height: 3px;
@@ -149,7 +149,7 @@
       display: block;
       height: 3px;
       /* Line under nav bar change color for unederline desktop nav */
-      background: rgb(0, 0, 0);
+      background: rgb(33, 39, 106);
       position: absolute;
       top: 1.1em;
       left: 0;
