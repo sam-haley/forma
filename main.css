@@ -25,10 +25,11 @@
     height: 600px;
     margin-top: -175px;
     /* border-bottom: 15px #A98B65 solid; */
-    background: linear-gradient(0deg, #A98B65 25%, transparent 26%) , linear-gradient(90deg, #A98B65 25%, transparent 26%), linear-gradient(180deg, #000000 25%, transparent 26%), linear-gradient(270deg, #000000 25%, transparent 26%);
+    background: linear-gradient(0deg, #A98B65 15%, transparent 15%) , linear-gradient(90deg, #A98B65 15%, transparent 16%), linear-gradient(180deg, #000000 15%, transparent 16%), linear-gradient(270deg, #000000 15%, transparent 16%);
     background-size:.5em .5em;
     background-position: top;
     opacity: 1;
+
 }
 /* where i change width of column on desktop view */
 /* how the page wrapper will appear on mobile */
@@ -76,6 +77,7 @@ grid-area: a;
 #lower-alphabet{
     grid-area:l;
     font-size: 200px;
+    padding-top: 48px;
 }
 }
 /* CSS for the footer */
@@ -92,7 +94,7 @@ footer{
 
 
 .wght{
-    padding-top: 115px;
+    padding-top: 245px;
     font-weight:20; 
     text-align: center;
     font-size: 15em;
