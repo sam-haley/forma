@@ -26,7 +26,7 @@
     margin-top: -175px;
     /* border-bottom: 15px #A98B65 solid; */
     background: linear-gradient(0deg, #A98B65 25%, transparent 26%) , linear-gradient(90deg, #A98B65 25%, transparent 26%), linear-gradient(180deg, #000000 25%, transparent 26%), linear-gradient(270deg, #000000 25%, transparent 26%);
-    background-size:.75em .75em;
+    background-size:.5em .5em;
     background-position: top;
     opacity: 1;
 }
