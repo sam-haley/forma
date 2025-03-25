@@ -21,15 +21,24 @@
     /* opacity: 1; */
 /* } */
 
-.hero{
-    height: 600px;
-    margin-top: -175px;
+/* .hero{ */
+    /* height: 600px; */
+    /* margin-top: -175px; */
     /* border-bottom: 15px #A98B65 solid; */
-    background: linear-gradient(0deg, #658ea9 15%, transparent 15%) , linear-gradient(90deg, #658ea9 15%, transparent 16%), linear-gradient(180deg, rgb(33, 73, 106) 15%, transparent 16%), linear-gradient(270deg, rgb(33, 73, 106) 15%, transparent 16%);
-    background-size:8.75em 8.75em;
-    background-position: top;
-    opacity: 1;
+    /* background: linear-gradient(0deg, #658ea9 15%, transparent 15%) , linear-gradient(90deg, #658ea9 15%, transparent 16%), linear-gradient(180deg, rgb(33, 73, 106) 15%, transparent 16%), linear-gradient(270deg, rgb(33, 73, 106) 15%, transparent 16%); */
+    /* background-size:8.75em 8.75em; */
+    /* background-position: top; */
+    /* opacity: 1; */
 
+/* } */
+.hero{
+height: 600px;
+margin-top: -175px;
+border-bottom: 15px #6865a9 solid;
+background-color: #e5e5f7;
+opacity: 1;
+background-image: radial-gradient(circle at center center, #c3e2f1, #8785ba), repeating-radial-gradient(circle at center center, #c3e2f1, #c3e2f1, 20px, transparent 30px, transparent 20px);
+background-blend-mode: multiply;
 }
 /* where i change width of column on desktop view */
 /* how the page wrapper will appear on mobile */
