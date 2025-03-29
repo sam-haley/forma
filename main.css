@@ -31,7 +31,7 @@
     /* opacity: 1; */
 
 /* } */
-.hero{
+/* .hero{
 height: 600px;
 margin-top: -175px;
 border-bottom: 15px #6865a9 solid;
@@ -39,6 +39,14 @@ background-color: #e5e5f7;
 opacity: 1;
 background-image: radial-gradient(circle at center center, #c3e2f1, #8785ba), repeating-radial-gradient(circle at center center, #c3e2f1, #c3e2f1, 20px, transparent 30px, transparent 20px);
 background-blend-mode: multiply;
+} */
+
+.hero { 
+    height: 600px; 
+    margin-top: -175px; 
+    border-bottom: 15px #6865a9 solid;
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, rgb(56, 50, 171) .5px, transparent .5px), linear-gradient(to bottom, rgb(74, 30, 155) .5px, transparent .5px);
 }
 /* where i change width of column on desktop view */
 /* how the page wrapper will appear on mobile */
@@ -154,7 +162,7 @@ footer{
 }
 
 /* animated width change */
-.width{
+/* .width{
     animation: WidthVariationChange 3s infinite;
 }
 
@@ -164,7 +172,25 @@ footer{
     }
     50%{font-variation-settings: "opsz" 0, "wght" 200, "slnt" 0, "wdth" 100;
     }
-}
+} */
+
+.width {
+    animation: widthChange 5s infinite;
+    color:  rgb(33, 39, 106);
+    margin: 0%;
+    padding: 0%;
+    }
+
+    @keyframes widthChange {
+        0%, 100%{
+            font-variation-settings: "wght" 100, "opsz" 8, "slnt" 0;
+            transform: scaleX(1);
+        }
+        50%{font-variation-settings: "wght" 300, "opsz" 8, "slnt" 0;
+            transform: scaleX(.5);
+        }
+
+    }
 h4{
     font-size: 55px;
     margin: 55px 0px;
@@ -242,9 +268,10 @@ h4{
     margin:60px 0px;
     border-radius: 10px;
     font-size: 16px;
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+    /* background-color: transparent; */
+    background-image: linear-gradient(to right, rgb(56, 50, 171) 1px, transparent 1px), linear-gradient(to bottom, rgb(74, 30, 155) 1px, transparent 1px); 
+    color: rgb(33, 39, 106);
+    border: 2px solid rgb(33, 39, 106);
     transition: all 0.3s ease;
 }
 
